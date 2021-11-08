@@ -17,7 +17,7 @@ fun Application.configureRouting() {
     // Starting point for a Ktor app:
     routing {
         get("/") {
-            val url = "https://techcrunch.com/gadgets/feed/"
+            val url = "https://technovagh.com/feed/"
             displayRssFeedInConsole(url)
             val news = getRssFeedAsString(url)
             call.respondText(news.toString())
